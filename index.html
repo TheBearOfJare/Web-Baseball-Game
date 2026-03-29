@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Ball!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game Container -->
+    <div id="game-container">
+
+        <!-- Start Button (usually hidden) -->
+        <button id="start-btn">Start Game</button>
+
+        <!-- Scoreboard -->
+        <div id="scoreboard">
+            <div class="team-score">
+                <span id="home-name">Home</span>
+                <span id="home-score">0</span>
+            </div>
+            <!-- Text Announcements -->
+            <div id="announcements">
+                <div id="pitch-result">Ready?</div>
+                <div id="play-result"></div>
+            </div>
+            <div class="team-score">
+                <span id="away-name">Away</span>
+                <span id="away-score">0</span>
+            </div>
+        </div>
+
+        <!-- Game Info -->
+        <div id="game-info">
+            <div id="inning-info">
+                <table id="inning-score">
+                    <tr>
+                        <td>Inning</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>R</td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>Home</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Away</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+                <span id="inning-number">1</span>
+                <span id="inning-half">Top</span>
+            </div>
+            <div id="balls-strikes-outs-info">
+                <span id="balls">0</span>
+                <span id="balls-label">Balls</span>
+                <span id="strikes">0</span>
+                <span id="strikes-label">Strikes</span>
+                <span id="outs">0</span>
+                <span id="outs-label">Outs</span>
+
+                <!-- Bases -->
+                <div id="bases">
+                    <div id="base-1"></div>
+                    <div id="base-2"></div>
+                    <div id="base-3"></div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!-- Game Background Graphics -->
+        <div id="game-background">
+            <div id="space"></div>
+            <div id="outfield-grass"></div>
+            <div id="foul-line-left" class="foul-line"></div>
+            <div id="foul-line-right" class="foul-line"></div>
+            <div id="infield-dirt"></div>
+            <div id="home-plate"></div>
+            <div id="first-base"></div>
+            <div id="second-base"></div>
+            <div id="third-base"></div>
+        </div>
+
+        
+    </div>
+
+    <script src="camera.js"></script>
+    <script src="graphics.js"></script>
+    <script src="ui.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
