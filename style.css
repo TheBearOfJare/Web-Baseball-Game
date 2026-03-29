@@ -256,10 +256,10 @@ body {
 /* Foul Lines */
 .foul-line {
     position: absolute;
-    bottom: 5vh;
+    bottom: 6.5vh;
     left: 50%;
     width: 0.6vh;
-    height: calc(52vh + var(--bg-scale-height) * 1vh);
+    height: calc(49.5vh + var(--bg-scale-height) * 1vh);
     background: rgba(248, 250, 252, 0.5);
     transform-origin: bottom center;
     z-index: 3;
@@ -267,10 +267,12 @@ body {
 }
 
 #foul-line-left {
+    margin-left: -2vh;
     transform: translateX(-50%) rotate(-45deg);
 }
 
 #foul-line-right {
+    margin-left: 2vh;
     transform: translateX(-50%) rotate(45deg);
 }
 
@@ -335,34 +337,31 @@ body {
 
 /* Text Announcements */
 #announcements {
-    position: absolute;
-    top: 40%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 20;
+    justify-content: center;
     pointer-events: none;
     text-align: center;
 }
 
 #pitch-result {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: #ffffff;
     text-transform: uppercase;
-    text-shadow: 0 0 30px rgba(0,0,0,0.9), 0 0 15px #38bdf8;
+    text-shadow: 0 0 20px rgba(0,0,0,0.9), 0 0 10px #38bdf8;
     animation: pulse 2s ease-in-out infinite alternate;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 #play-result {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fde047;
-    text-shadow: 0 6px 8px rgba(0,0,0,0.9);
-    margin-top: 15px;
-    letter-spacing: 2px;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.9);
+    margin-top: 10px;
+    letter-spacing: 1px;
 }
 
 @keyframes pulse {

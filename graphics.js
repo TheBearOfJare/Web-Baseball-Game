@@ -1,6 +1,6 @@
 function createStars() {
     const space = document.getElementById('space');
-    const numStars = 200;
+    const numStars = 400;
 
     for (let i = 0; i < numStars; i++) {
         let wrapper = document.createElement('div');
