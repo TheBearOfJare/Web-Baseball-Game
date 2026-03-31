@@ -21,7 +21,7 @@
             </div>
             <!-- Text Announcements -->
             <div id="announcements">
-                <div id="pitch-result">Ready?</div>
+                <div id="pitch-result"></div>
                 <div id="play-result"></div>
             </div>
             <div class="team-score">
@@ -49,7 +49,7 @@
                         <td>E</td>
                     </tr>
                     <tr>
-                        <td>Home</td>
+                        <td>Earth</td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
@@ -63,7 +63,7 @@
                         <td>-</td>
                     </tr>
                     <tr>
-                        <td>Away</td>
+                        <td>Mars</td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
@@ -99,8 +99,8 @@
             
         </div>
 
-        <!-- Game Background Graphics -->
-        <div id="game-background">
+        <div id="graphics">
+            <!-- Game Background Graphics -->
             <div id="space"></div>
             <div id="outfield-grass"></div>
             <div id="foul-line-left" class="foul-line"></div>
@@ -110,6 +110,14 @@
             <div id="first-base"></div>
             <div id="second-base"></div>
             <div id="third-base"></div>
+
+            <!-- Players and other Foreground Graphics -->
+            <div id="earth-side-up-to-bat">
+                <img src="img/Earth_Up_To_Bat.svg" alt="A floating platform">
+            </div>
+            <div id="mars-side-up-to-bat">
+                <img src="img/Earth_Up_To_Bat.svg" alt="A floating platform">
+            </div>
         </div>
 
         
@@ -119,5 +127,6 @@
     <script src="graphics.js"></script>
     <script src="ui.js"></script>
     <script src="game.js"></script>
+    <script src="helpers.js"></script>
 </body>
 </html>

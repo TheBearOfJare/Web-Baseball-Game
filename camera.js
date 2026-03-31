@@ -1,11 +1,11 @@
 function updateBackgroundScale(width, height) {
-    const gameBackground = document.getElementById('game-background');
+    const gameBackground = document.getElementById('graphics');
     gameBackground.style.setProperty('--bg-scale-width', width);
     gameBackground.style.setProperty('--bg-scale-height', height);
 }
 
 function updateCameraPosition(x, y) {
-    const gameBackground = document.getElementById('game-background');
+    const gameBackground = document.getElementById('graphics');
     gameBackground.style.setProperty('--bg-camera-x', x + 'vw');
     gameBackground.style.setProperty('--bg-camera-y', y + 'vh');
 }

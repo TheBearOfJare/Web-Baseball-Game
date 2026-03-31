@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="Body">
+        <g transform="matrix(0.972407,0,0,0.972407,82.419704,-544.416131)">
+            <circle cx="961.118" cy="1077.677" r="275.926" style="fill:rgb(235,235,235);"/>
+        </g>
+        <g transform="matrix(1.359121,0,0,1.359121,-463.291797,-630.911113)">
+            <path d="M800.278,1366.293C800.277,1206.744 929.617,1077.405 1089.166,1077.405C1248.715,1077.405 1378.055,1206.744 1378.055,1366.293L1378.055,1894.688L800.278,1894.688L800.278,1366.293Z" style="fill:rgb(54,164,231);stroke:rgb(0,27,76);stroke-width:3.07px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1.359121,0,0,1.359121,-202.664793,-587.285034)">
+        <g id="Hat">
+            <path d="M1082.748,605.168C1082.748,605.168 1215.712,630.85 1215.6,633.032C1210.281,736.795 1117.328,759.969 942.195,699.668C819.981,736.464 735.9,751.333 699.989,738.504C691.038,715.155 679.176,677.17 668.496,630.087C710.489,492.739 832.801,441.595 975.053,492.406C1032.042,512.762 1051.06,556.205 1082.748,605.168Z" style="fill:rgb(54,164,231);stroke:rgb(5,31,80);stroke-width:3.07px;"/>
+        </g>
+    </g>
+</svg>

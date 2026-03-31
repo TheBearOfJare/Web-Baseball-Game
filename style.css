@@ -170,11 +170,29 @@ body {
 #base-3 { left: 0; top: 0; }
 
 
+#start-btn {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.7);
+    padding: 20px 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f8fafc;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
 
 
 
 /* Game Background Graphics (The Field) */
-#game-background {
+#graphics {
     position: absolute;
     top: 0;
     left: 0;
@@ -256,10 +274,10 @@ body {
 /* Foul Lines */
 .foul-line {
     position: absolute;
-    bottom: 6.5vh;
+    bottom: 5.5vh;
     left: 50%;
     width: 0.6vh;
-    height: calc(49.5vh + var(--bg-scale-height) * 1vh);
+    height: calc(51vh + var(--bg-scale-height) * 0.95vh);
     background: rgba(248, 250, 252, 0.5);
     transform-origin: bottom center;
     z-index: 3;
@@ -267,12 +285,12 @@ body {
 }
 
 #foul-line-left {
-    margin-left: -2vh;
+    margin-left: -1vh;
     transform: translateX(-50%) rotate(-45deg);
 }
 
 #foul-line-right {
-    margin-left: 2vh;
+    margin-left: 1vh;
     transform: translateX(-50%) rotate(45deg);
 }
 
@@ -292,11 +310,11 @@ body {
 /* Bases on the Field */
 #home-plate {
     position: absolute;
-    bottom: 5vh;
+    bottom: 4vh;
     left: 50%;
-    transform: translateX(-50%) scale(1.5);
-    width: 3vh;
-    height: 2.5vh;
+    transform: translateX(-50%);
+    width: 4vh;
+    height: 4vh;
     background: #f8fafc;
     clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 100%, 0 50%, 0% 0%);
     z-index: 3;
@@ -334,6 +352,39 @@ body {
     transform: translateX(-50%) rotate(45deg);
     z-index: 3;
 }
+
+#earth-side-up-to-bat {
+    position: absolute;
+    bottom: -5vh;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+}
+
+#mars-side-up-to-bat {
+    position: absolute;
+    bottom: -5vh;
+    left: 50%;
+    transform: translateX(-50%) scale(1.5);
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Active game elements */
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f8fafc;
+    border-radius: 50%;
+    z-index: 5;
+    transform: scaleX(calc(1 / var(--bg-scale-width))) scaleY(calc(1 / var(--bg-scale-height)));
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
 
 /* Text Announcements */
 #announcements {
